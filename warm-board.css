@@ -1,0 +1,7 @@
+body{background:#d7d9e9;color:#232942;font-family:Avenir,'Avenir Next',-apple-system,sans-serif}
+header{border-bottom-color:#8789b855;background:linear-gradient(110deg,#dfe1f1,#c8cbe5)}
+header h1{font-family:Georgia,'Songti SC',serif;font-weight:400;font-size:29px;line-height:1.4}header p,.foot,.item>p{color:#434f7d}header small{color:#414597}
+a{color:#344485;border-color:#8083bb;background:#e9eafa44}a:hover{background:#e9eafa}.label{color:#333e69}.label span,.label h2 span{color:#555890}
+.frame{background:#1c2033;border-color:#61649c55;box-shadow:0 18px 40px #1b244922}iframe{background:#1c2033}.tabs{background:#d7d9e9ee}.tabs button{border-color:#797cb766;color:#384474;cursor:pointer}.tabs button.active{background:#4e53ac;border-color:#555aba;color:#f3f4fd}.tabs button:hover{background:#b4b6e2;color:#202b56}
+button:focus-visible,a:focus-visible,select:focus-visible{outline:2px solid #3e43a3;outline-offset:4px}
+@media(max-width:700px){header h1{font-size:25px}}
