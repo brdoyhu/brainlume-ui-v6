@@ -1,0 +1,43 @@
+/* V7 dark appearance uses the exact V6 Blue Hour palette.
+   Light appearance and layout remain in v7.css. */
+:root[data-theme=dark]{
+ --app-background:radial-gradient(ellipse at 92% 38%,#7464b12e,transparent 62%),radial-gradient(ellipse at 8% 4%,#315d9747,transparent 56%),linear-gradient(164deg,#1d3558 0%,#202d50 57%,#171f39 100%);
+ --bg:#152440;--surface:#23365b;--surface2:#354574;--surface-solid:#233454;--tint:#354574;
+ --line:#9dabe04d;--text:#f4f6ff;--muted:#bdc9e4;--accent:#a7b9ff;
+ --button:#4b68c7;--button-end:#7455b5;--green:#a8dfd1;
+ --warning:#ffdaa5;--warning-bg:#c2913519;--shadow:#182c7326;
+}
+.phone[data-theme=dark]{background:var(--app-background);border-color:#697797}
+.phone[data-theme=dark][data-screen=home]{background:radial-gradient(ellipse at 82% 49%,#8274ce33,transparent 56%),radial-gradient(ellipse at 32% 79%,#db84b01c,transparent 32%),linear-gradient(161deg,#1d3658 0%,#26375a 47%,#30375b 73%,#192741 100%)}
+.phone[data-theme=dark][data-screen=light]{background:radial-gradient(ellipse at 48% 47%,#9b6ba22b,transparent 48%),radial-gradient(ellipse at 86% 34%,#7164c139,transparent 60%),linear-gradient(160deg,#1d3558,#232e50 65%,#1a233e)}
+.phone[data-theme=dark] button.primary,
+.phone[data-theme=dark] .measurement-actions button.primary,
+.phone[data-theme=dark] .segmented .selected{
+ background:linear-gradient(115deg,#4b68c7,#7455b5);border:1px solid #a6b3f388;color:#fff;box-shadow:0 5px 22px #182c7326;
+}
+.phone[data-theme=dark] button.primary:hover{background:linear-gradient(115deg,#5573d3,#8062c0);filter:none}
+.phone[data-theme=dark] button.primary:active{background:#4a55a0}
+.phone[data-theme=dark] .secondary{background:#91a9e00c;color:#f1f4ff;border-color:#a1b1d880}
+.phone[data-theme=dark] .scene-card{background:linear-gradient(135deg,#5475a640,#7662a025);border-color:#a2b1dd66;color:#f0f3ff}
+.phone[data-theme=dark] .scene-card>svg:first-child{color:#b5bcf6}
+.phone[data-theme=dark] .scene-card:hover{background:#969deb20;border-color:#c0cafa}
+.phone[data-theme=dark] .app-nav{background:linear-gradient(112deg,#364b76d9,#45416dde);border-color:#b2bee144;box-shadow:0 8px 26px #0f1b3622}
+.phone[data-theme=dark] .app-nav button{color:#c9d3e9}
+.phone[data-theme=dark] .app-nav button.selected{color:#e0d3ff}
+.phone[data-theme=dark] .text-link{color:#c1c9fc}
+.phone[data-theme=dark] .segmented{background:#13213b55;border-color:#94a5cf66}
+.phone[data-theme=dark] .device-pill{color:#e2e9fa;background:#a3b9e50c;border-color:#a9b9e03b}
+.phone[data-theme=dark] .status-dot{background:#a8dfd1}
+.phone[data-theme=dark] .status-dot.offline{background:#ffd59a}
+.phone[data-theme=dark] .notice.warning{border-color:#d9b77680;color:#ffdaa5;background:#c2913519}
+.phone[data-theme=dark] .channel{color:#9ac8ff}
+.phone[data-theme=dark] .ch2{color:#c3adff}
+.phone[data-theme=dark] .ch3{color:#e4aacb}
+.phone[data-theme=dark] input:not([type=range]),.phone[data-theme=dark] select{background:#233454;border-color:#7e91bb;color:#f4f6ff}
+.phone[data-theme=dark] .modal{background:linear-gradient(145deg,#2e3c65,#1c2a47);border-color:#9baad1}
+.phone[data-theme=dark] .chart-line{stroke:#b8a8fa}
+.phone[data-theme=dark] .trend-chart circle{fill:#c1b0ff}
+.phone[data-theme=dark] .home-indicator{background:#f2f4ff}
+.mini-preview.dark{background:linear-gradient(164deg,#1d3558,#202d50 57%,#171f39)}
+.mini-preview.dark span{background:linear-gradient(115deg,#4b68c7,#7455b5)}
+.mini-preview.dark b{background:#23365b;border-color:#9dabe04d}

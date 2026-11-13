@@ -1,0 +1,26 @@
+/* V5 Blue Hour component treatment, applied to the current V7 UE. */
+.phone[data-theme=dark]{--surface:#9dafe510;--surface2:#354574;--tint:#6965ab30;box-shadow:0 24px 65px #14224030,0 0 0 5px #283449}
+:root[data-lang=en] .phone[data-theme=dark] h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.7px;line-height:1.22}
+.phone[data-theme=dark] h2,.phone[data-theme=dark] h3{font-weight:500}
+.phone[data-theme=dark] .scene-card{background:linear-gradient(135deg,#5475a62c,#7662a01a);border-color:#a6b7db66;box-shadow:0 10px 24px #0a0e1c0b;border-radius:22px}
+.phone[data-theme=dark] .scene-card strong{font-weight:550}
+.phone[data-theme=dark] .card,.phone[data-theme=dark] .rating-summary,.phone[data-theme=dark] .rating-card,.phone[data-theme=dark] .task-preview{background:#9dafe510;border-color:#9dabe04d;box-shadow:none}
+.phone[data-theme=dark] .soft-card,.phone[data-theme=dark] .resume-card{background:linear-gradient(135deg,#5475a640,#7662a025);border-color:#a2b1dd66}
+.phone[data-theme=dark] .eeg{background:#696db717;border-color:#9dabe04d;border-radius:15px}
+.phone[data-theme=dark] .light-checks,.phone[data-theme=dark] .fit-list{background:#8aa5dd0e;border-color:#9bafd63b}
+.phone[data-theme=dark] button.primary,.phone[data-theme=dark] button.secondary{border-radius:28px}
+.phone[data-theme=dark] .app-nav{border-radius:35px;min-height:66px;padding:8px 10px;backdrop-filter:blur(22px)}
+.phone[data-theme=dark] .app-nav button{position:relative}
+.phone[data-theme=dark] .app-nav button.selected:after{content:'';position:absolute;bottom:-2px;width:14px;height:2px;border-radius:2px;background:#c5b1ff}
+.phone[data-theme=dark] .language-toggle{border-radius:22px;background:#a3b9e50a;border-color:#a6b7db44}
+.phone[data-theme=dark] .periods .on i{background:#b4bef6;border-color:#435987;box-shadow:0 0 0 3px #8a8fe512}
+.phone[data-theme=dark] .periods .done i{background:#435987;border-color:#8c9fc8}
+.phone[data-theme=dark] .home-intro .photon{width:185px;height:163px;margin:-8px auto 2px}
+.phone[data-theme=dark] .home-intro h1{font-weight:500}
+.phone[data-theme=dark] .scene-list{gap:10px}
+.phone[data-theme=dark] .shortcuts button{background:#a3b9e50a}
+.phone[data-theme=dark] .switch{background:#52617f}
+.phone[data-theme=dark] .switch.on{background:#7868c5}
+.phone[data-theme=dark] button:focus-visible,.phone[data-theme=dark] summary:focus-visible{outline-color:#c1b7ff}
+@media(max-width:700px){.phone[data-theme=dark]{box-shadow:none}.phone[data-theme=dark] .home-intro .photon{width:180px;height:155px}}
+@media(max-width:700px) and (max-height:740px){.phone[data-theme=dark] .home-intro .photon{width:135px;height:110px}}

@@ -1,0 +1,9 @@
+/* Review board uses the V5 Blue Hour presentation. */
+body{background:linear-gradient(125deg,#d9dcef,#c6c8e0);color:#24314b}
+header{background:linear-gradient(115deg,#dcdff0,#c6c8e0);border-color:#a5b0cf55}
+.kicker,header p{color:#34466c}.header-links a{border-color:#7c87ae;color:#34466c;border-radius:10px}
+.gallery-controls{background:#1d293bed;border-color:#9dabe044;color:#e1e6f7}
+.gallery-controls button{background:#ffffff05;color:#d6ddef;border-color:#9dabe044}
+.gallery-controls button.active,.language-select button.active{background:#5867a2;border-color:#a6b3f388;color:#fff}
+.language-select>span{color:#bdc9e4}.card-label h2 span,.card-label a,.gallery-card>p,.foot,.foot a{color:#485a7e}
+.screen-frame{border-color:#697797;background:#152440;box-shadow:0 15px 30px #14224026}

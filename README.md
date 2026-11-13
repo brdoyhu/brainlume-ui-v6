@@ -1,12 +1,12 @@
-# Brainlume V6 — Blue Hour
+# Brainlume UI — V7 UE / Visual edition
 
-English interactive UI design prototype, with a deep-ocean blue and violet brand palette and the P1.25 conversation-led structure. All data, conversations, signals and device behavior are simulated.
+Updated 2026-11-13. Latest complete interactive design preview at the existing Pages URL.
 
-- [Try V6](https://brdoyhu.github.io/brainlume-ui-v6/)
-- [Design board](https://brdoyhu.github.io/brainlume-ui-v6/board.html)
-- [All 67 states](https://brdoyhu.github.io/brainlume-ui-v6/pages.html)
-- [Compare V2 and V6](https://brdoyhu.github.io/brainlume-ui-v6/compare.html)
+- App: index.html
+- Navigation and screen preview: board.html
+- All 81 states: pages.html
+- Appearance comparison: appearance.html
 
-The independent V2 website is preserved at https://brdoyhu.github.io/brainlume-ui-v2/.
+Supports English / Simplified Chinese and light / dark / system appearance. Language is available in Device → Appearance & language. All signals, device status and activity samples are illustrative; no real account, hardware or backend connection.
 
-Updated 2026-10-21: UE module shortcuts, hearing calibration, educational pages and safety branches. Three EEG channels are shown directly; each 60-second measurement period starts at zero.
+Includes official proportion-preserved logo and user-provided model photography. Gradient Waves attribution and license: assets/vendor/react-bits/LICENSE.md.
