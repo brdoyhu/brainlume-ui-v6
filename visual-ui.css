@@ -52,3 +52,4 @@
 .app-header:has(.logo){gap:8px}
 }
 @media(max-width:360px){.app-header .device-pill{display:none}}
+@media(max-width:700px){.app-header .mobile-language{order:2}}
