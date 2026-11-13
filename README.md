@@ -7,6 +7,6 @@ Updated 2026-11-13. Latest complete interactive design preview at the existing P
 - All 81 states: pages.html
 - Appearance comparison: appearance.html
 
-Supports English / Simplified Chinese and light / dark / system appearance. Language is available in Device → Appearance & language. All signals, device status and activity samples are illustrative; no real account, hardware or backend connection.
+Supports English / Simplified Chinese and light / dark / system appearance. Defaults to English when no language is specified. Mobile header provides EN / 中 switching, also available in Device → Appearance & language. All signals, device status and activity samples are illustrative; no real account, hardware or backend connection.
 
 Includes official proportion-preserved logo and user-provided model photography. Gradient Waves attribution and license: assets/vendor/react-bits/LICENSE.md.

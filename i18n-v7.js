@@ -1,6 +1,6 @@
 /* UI copy only; protocol values and action identifiers are not translated. */
 window.BLI18n = (()=>{
-const zh={"No EEG collected":"不采集脑电","Your activity.":"你的使用记录",
+const zh={"Switch to Chinese":"切换为中文","Switch to English":"切换为英文","No EEG collected":"不采集脑电","Your activity.":"你的使用记录",
 "How awake":"此刻，","do you feel?":"感觉清醒吗？","Choose your next step":"选择这次体验","min + self-report":"分钟＋自评","min + task":"分钟＋任务","min + check-in":"分钟＋可选自评","Build your reference":"建立个人参考","min rest":"分钟休息","Your check, recorded.":"本次记录","Record context":"记录依据与限制","No reference yet":"暂无个人参考","Reference available":"已有个人参考","Check your fit.":"调整佩戴","Adjust fit":"贴合额头","Relax your face":"面部放松","Time to rest.":"安心休息","How tired do you feel?":"此刻有多疲劳？","Collection details":"采集说明","Activity":"使用记录","Demo \u00b7 4 weeks":"示例 · 4 周","Active days":"使用天数","Check days":"检测天数","No record":"无记录","Check":"检测","Check + light":"检测＋光照","Check recorded":"已完成检测","Light only \u00b7 No EEG":"只照不测 · 无脑电数据","Tap a day to view activity.":"点击日期，查看使用记录。","Activity only, not a brain-state score.":"仅表示使用情况，不代表脑状态好坏。","Demo day":"示例第","Temperature":"温度","Energy":"能量","Within demo limit":"示例范围内","Normal \u00b7 Demo":"正常 · 示例","Demo quality":"示例质量",
 
 "Your task,":"本次任务，","in context.":"结合背景看。","Your signal,":"本次信号，","with context.":"保留采集背景。",
@@ -707,7 +707,7 @@ const zh={"No EEG collected":"不采集脑电","Your activity.":"你的使用记
 };
 Object.assign(zh,{'Demo':'演示','Example':'示例','Proposal':'提案','minutes':'分钟','min':'分钟','days':'天','Before check recorded':'前测已记录','Illustrative record':'示例记录','Before and After':'前后测','Between checks':'前后测之间','Fatigue':'疲劳','Focus':'专注','Relaxation':'放松','Simulated event.':'模拟事件。','Simulated event':'模拟事件','After your session':'本次结束后','the context.':'使用背景。','Take the next step':'接下来，','at your pace.':'按自己的节奏来。','Stay comfortable. Let your eyes rest.':'保持舒适，让双眼自然休息。'});
 Object.assign(zh,{"Calibration": "剂量标定", "Current measurement": "当前测量", "Measurement interruption": "测量中断", "Safety stop": "安全停止", "Light interruption": "光照中断", "Light session": "光照进行中", "EEG": "脑电", "Temperature limit · Simulated event.": "温度上限停止 · 模拟事件。", "Cumulative energy limit · Simulated event.": "累计能量上限停止 · 模拟事件。", "Driver current limit · Simulated event.": "驱动限流停止 · 模拟事件。", "Switch language · 切换语言": "切换为 English", "安全停止：current": "安全停止：驱动电流", "安全停止：energy": "安全停止：累计能量", "安全停止：temperature": "安全停止：温度"});
-let lang=new URLSearchParams(location.search).get('lang');if(!['zh','en'].includes(lang)){try{lang=localStorage.getItem('brainlume-v7-lang')}catch{}if(!['zh','en'].includes(lang))lang='en';}
+let lang=new URLSearchParams(location.search).get('lang');if(!['zh','en'].includes(lang))lang='en';
 const keys=Object.keys(zh).filter(x=>x.length>2).sort((a,b)=>b.length-a.length);
 const escaped=s=>s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 function t(raw){if(lang!=='zh'||!raw)return raw;const s=String(raw),text=s.trim().replace(/\s+/g,' ');if(!text)return s;let translated=zh[text];

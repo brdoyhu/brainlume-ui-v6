@@ -39,3 +39,16 @@
 .logo img,.rail-brand img,.splash>img{height:auto;aspect-ratio:914 / 397;object-fit:contain;object-position:center;mix-blend-mode:normal;image-rendering:auto;filter:brightness(0)}
 .phone[data-theme=dark] .logo img,.phone[data-theme=dark] .splash>img,.phone[data-screen=welcome] .logo img{filter:none;mix-blend-mode:normal}
 @media(max-width:360px){.app-header .logo,.app-header .logo img{width:180px}.app-header:has(.logo){gap:6px}.app-header .device-pill{padding:6px 8px;font-size:10px}}
+
+/* Mobile bilingual control, with the current choice emphasized. */
+.mobile-language{display:none}
+@media(max-width:700px){
+.mobile-language{display:flex;align-items:center;justify-content:center;gap:5px;flex-shrink:0;min-width:68px;min-height:44px;padding:8px;border-radius:22px;background:var(--surface);border:1px solid var(--line);color:var(--muted);font-size:12px}
+.mobile-language .lang-current{color:var(--text);font-weight:650}
+.app-header .header-title{min-width:0;overflow-wrap:anywhere;text-align:right;font-size:11px}
+.app-header .logo{margin-right:auto}
+.app-header .device-pill{margin-left:auto;min-width:30px;min-height:44px;padding:8px;justify-content:center}
+.app-header .device-connection-label{display:none}
+.app-header:has(.logo){gap:8px}
+}
+@media(max-width:360px){.app-header .device-pill{display:none}}
