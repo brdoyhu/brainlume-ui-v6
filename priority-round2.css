@@ -1,0 +1,131 @@
+/* Round two: task hierarchy, readable data, and one control vocabulary. */
+.phone{--control-radius:24px;--panel-radius:16px;--row-radius:12px}
+.phone[data-theme=dark]{--surface:#a9b8e510;--tint:#b49ae91c;--line:#b4bce43f}
+.phone[data-theme=light]{--surface:#ffffffb8;--tint:#eee6fb;--line:#d8cdec}
+.phone button.primary,.phone button.secondary{border-radius:var(--control-radius)}
+.phone .card,.phone .rating-card,.phone .task-preview,.phone .eeg,.phone .ue-entry-group,.phone .ue-entries>.ue-entry,.phone .learn-entry{border-radius:var(--panel-radius)}
+.phone .segmented{border-radius:var(--row-radius);padding:4px;gap:4px}
+.phone .segmented button{min-height:44px;border:1px solid transparent;border-radius:9px;line-height:1.4;font-size:13px}
+.phone .segmented .selected,.phone[data-theme=dark] .segmented .selected{background:var(--tint);color:var(--text);border-color:var(--accent);box-shadow:none}
+.phone .awake-option[aria-pressed=true],.phone[data-theme=dark] .awake-option[aria-pressed=true]{background:var(--tint);color:var(--text);border-color:var(--accent)}
+.phone .ue-entries .ue-entry,.phone[data-theme=dark] .ue-entries .ue-entry{background:var(--surface);border-color:var(--line)}
+.phone .ue-entry-group{background:var(--surface);border-color:var(--line)}
+.phone .ue-entry-group .ue-entry,.phone[data-theme=dark] .ue-entry-group .ue-entry{background:transparent}
+.phone .learn-entry{background:transparent;border-color:var(--line)}
+.phone .app-header:has(.logo){height:66px;gap:8px}
+.phone .app-header .logo{height:66px;min-height:66px}
+.phone .app-header .logo img{width:180px;height:auto;aspect-ratio:914 / 397;object-fit:contain}
+.phone .app-header:has(.logo) .header-title{display:none}
+.phone .app-header .header-title{font-size:12px}
+.phone .visual-greeting{padding-top:0;margin-bottom:17px}
+.phone .visual-greeting .home-welcome{margin-bottom:8px}
+.phone .visual-greeting h1{font-size:27px;line-height:1.25;margin-bottom:16px}
+.phone .visual-greeting>.photon{top:-9px;width:100px;height:100px}
+.phone svg{stroke-width:1.7}
+.phone .ue-entry>svg:first-child{width:23px;height:23px}
+.phone .ue-entry-group .ue-entry>svg:first-child,.phone .list-button>svg:first-child{width:21px;height:21px;color:var(--accent)}
+.phone .ue-entry>svg:last-child,.phone .list-button>svg:last-child{width:16px;height:16px;color:var(--muted)}
+.phone .list-button{padding:15px 2px;gap:12px;min-height:56px}
+.phone .list-button>span{min-width:0;flex:1}
+.phone .list-button strong{font-size:14px}
+.phone .list-button small,.phone[data-screen=device] .list-button small{font-size:12px;line-height:1.6}
+.phone .list-button:active{background:var(--tint)}
+.phone .ue-session-route{display:flex;gap:8px;margin:0 0 15px;padding:6px 0 12px;border-bottom:1px solid var(--line)}
+.phone .ue-session-route li{gap:6px;min-width:0;align-items:center;color:var(--muted)}
+.phone .ue-session-route li>span{width:17px;height:17px;font-size:10px;border-color:var(--line)}
+.phone .ue-session-route strong{font-size:11px;line-height:1.45;font-weight:450}
+.phone .ue-session-route small{font-size:10px;line-height:1.5}
+.phone .ue-session-route .current{color:var(--text)}
+.phone .ue-session-route .current>span{background:var(--tint);color:var(--text);border-color:var(--accent)}
+.period-progress{margin:0 0 16px}
+.period-caption{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:11px}
+.period-caption strong{font-weight:550;font-size:14px}
+.period-caption>span{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.period-steps{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:0;padding:0}
+.period-steps li{position:relative;display:flex;align-items:center;justify-content:center;gap:5px;min-height:35px;border:1px solid var(--line);border-radius:8px;color:var(--muted)}
+.period-steps li>span{font-size:11px;display:grid;place-items:center;min-width:12px}
+.period-steps svg{width:13px;height:13px}
+.period-steps small{font-size:12px;line-height:1.5}
+.period-steps li.current{background:var(--tint);border-color:var(--accent);color:var(--text);font-weight:550}
+.period-steps li.finished{color:var(--accent)}
+.phone[data-screen=measure] .measurement-heading{margin:0 0 16px;gap:12px}
+.phone[data-screen=measure] .measurement-heading h1{font-size:28px;line-height:1.2}
+.phone[data-screen=measure] .measurement-heading p{font-size:13px;line-height:1.5;margin-bottom:0}
+.phone[data-screen=measure] .period-time strong{font-size:48px;line-height:1;font-variant-numeric:tabular-nums}
+.phone[data-screen=measure] .period-time small{font-size:12px}
+.phone .eeg{padding:14px}
+.phone .eeg .channel-label{font-size:12px;line-height:1.5;gap:7px}
+.phone .eeg .channel-label span{font-size:11px}
+.phone .eeg .axis{font-size:11px}
+.phone .eeg .trace{stroke-width:1.45;vector-effect:non-scaling-stroke}
+.phone .eeg .channel svg{width:100%;display:block}
+.phone[data-screen=measure] .channel svg{height:44px}
+.phone[data-screen=measure] .channel{margin:11px 0 8px}
+.phone[data-screen=wear] .channel svg{height:34px}
+.phone .butterfly-axis{font-size:12px;line-height:1.5}
+.phone .butterfly-labels{font-size:12px}
+.phone .butterfly-trace{stroke-width:1.35}
+.phone .band-distribution .section-head{gap:12px;align-items:center}
+.phone .band-distribution h2{font-size:17px;max-width:72%}
+.phone .band-distribution .section-head>small{font-size:11px;white-space:normal;text-align:right}
+.phone .band-distribution>.caption,.phone .band-source{font-size:12px;line-height:1.65}
+.phone .butterfly-bands{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.phone .butterfly-band{position:relative;display:grid;grid-template-columns:9px minmax(0,1fr);gap:5px 7px;min-height:88px;padding:10px;border-radius:var(--row-radius);font-size:14px;align-content:start;align-items:start}
+.phone .butterfly-band>span:nth-child(2){min-width:0;line-height:1.4}
+.phone .butterfly-band .band-key{margin-top:6px}
+.phone .butterfly-band small{font-size:12px;line-height:1.5;margin-top:3px;overflow-wrap:anywhere}
+.phone .butterfly-band strong{grid-column:2;font-size:20px;line-height:1.3;margin:0;font-weight:500}
+.phone .butterfly-band[aria-pressed=true]{border-color:var(--accent);background:var(--tint)}
+.phone .butterfly-band[aria-pressed=false]{color:var(--muted);border-style:dashed;background:transparent}
+.phone .butterfly-band:active{background:var(--tint)}
+.phone .trend-view-tabs{display:flex;gap:4px;margin:15px 0 22px}
+.phone .trend-view-tabs button{display:flex;flex:1;min-width:0;align-items:center;justify-content:center;gap:7px;padding:10px 8px;font-size:14px}
+.trend-view-tabs svg{width:18px;height:18px}
+.trend-panel{margin:0 0 25px}
+.trend-panel .section-head{align-items:center;gap:12px;margin:0 0 10px}
+.trend-panel h2{font-size:16px;margin:0;max-width:52%}
+.trend-panel>.caption{font-size:12px;margin:9px 0 12px}
+.trend-periods{display:flex;gap:3px;flex-shrink:0}
+.trend-periods button{min-height:44px;min-width:46px;padding:8px 6px;border-radius:9px;font-size:12px;line-height:1.4;background:transparent;color:var(--muted);border:1px solid transparent}
+.trend-periods button.selected{border-color:var(--line);color:var(--text);background:var(--surface)}
+.phone .trend-chart{width:100%;height:auto;display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--panel-radius);padding:12px 6px}
+.phone .trend-chart .chart-labels{font-size:12px;fill:var(--muted)}
+.phone .trend-chart .chart-line{stroke-width:2}
+.trend-reading{display:flex;flex-direction:column;gap:8px;margin-top:15px;font-size:12px;color:var(--muted)}
+.trend-reading strong{font-weight:500;color:var(--text)}
+.phone .recent-heading{margin:24px 0 5px}
+.phone[data-screen=trends]>.phone-main>h1{font-size:28px;margin:8px 0 12px}
+.phone .activity-panel{padding:0;border:0;background:transparent;border-radius:0;margin:0 0 23px}
+.phone .activity-panel .section-head{margin-bottom:19px;gap:12px}
+.phone .activity-panel .section-head>small{font-size:12px;text-align:right;max-width:50%;color:var(--muted)}
+.phone .activity-panel h2{font-size:16px}
+.phone .activity-totals{padding-bottom:17px;margin-bottom:15px}
+.phone .activity-totals .visual-metric>span{font-size:12px}
+.phone .activity-weekdays{font-size:12px;gap:4px}
+.phone .activity-grid{gap:4px}
+.phone .activity-cell{height:44px;min-height:44px;border-radius:9px;font-size:13px;color:#17223c;font-weight:550;transition:background-color .15s ease,border-color .15s ease}
+.phone .activity-cell.level-0{background:var(--surface);border-color:var(--line);color:var(--muted)}
+.phone .activity-cell.level-1{background:#a4b4ee}
+.phone .activity-cell.level-2{background:#c4a8ee}
+.phone .activity-cell.level-3{background:#e2d1ff}
+.phone .activity-cell:hover{transform:none;border-color:var(--text)}
+.phone .activity-cell.selected{outline:2px solid var(--accent);outline-offset:1px}
+.phone .activity-legend{font-size:12px;gap:10px 12px;line-height:1.6;margin:16px 0}
+.phone .activity-panel>.caption,.phone .activity-panel>small.caption{font-size:12px;line-height:1.65}
+.phone .activity-selection{font-size:13px;line-height:1.6;padding:12px 0;gap:8px}
+.phone .activity-selection span{font-size:12px}
+@media(max-width:360px){
+ .phone .app-header:has(.logo){height:66px}
+ .phone .visual-greeting h1{font-size:26px}
+ .phone .eeg .channel-label span{font-size:10px}
+ .phone .butterfly-band{font-size:13px;padding:9px;min-height:96px}
+ .phone .butterfly-band small{font-size:11px}
+ .phone .butterfly-band strong{font-size:19px}
+ .phone .period-time strong{font-size:40px}
+ .phone .period-steps small{font-size:11px}
+ .phone .activity-grid,.phone .activity-weekdays{gap:3px}
+ .phone .activity-cell{font-size:12px}
+}
+
+.phone .butterfly-band small{overflow-wrap:normal;white-space:nowrap}
+.phone .band-visibility{display:block;font-size:11px;line-height:1.5}

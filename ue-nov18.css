@@ -1,0 +1,45 @@
+/* November 18 UE alignment. Shared V7 theme and controls. */
+.ue-entries{display:grid;gap:11px}
+.ue-entries .ue-entry{display:flex;flex-direction:row;align-items:center;gap:12px;min-height:62px;padding:14px 16px;width:100%;text-align:left}
+.ue-entry>span{flex:1;min-width:0}
+.ue-entry strong{color:var(--text);font-size:15px;font-weight:550;line-height:1.4}
+.ue-entry>svg:last-child{width:17px;height:17px}
+.ue-entry-group{display:grid;gap:4px;padding:13px 13px 6px;border:1px solid var(--line);border-radius:20px;background:var(--tint)}
+.ue-entry-group h2{margin:2px 4px 3px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--accent)}
+.ue-entry-group h2 svg{width:17px;height:17px}
+.phone .ue-entry-group .ue-entry{min-height:48px;padding:10px 8px;border:0;border-radius:10px;background:transparent}
+.phone .ue-entry-group .ue-entry:hover{background:var(--surface)}
+.ue-entry-group .ue-entry>svg:first-child{width:20px;height:20px}
+.ue-entry-group .ue-entry+.ue-entry{border-top:1px solid var(--line);border-radius:0}
+.phone[data-screen=best] .ue-plan-steps{padding:0;list-style:none;margin:24px 0}
+.phone[data-screen=best] .ue-plan-steps li{min-height:55px;padding:0 0 22px 44px}
+.phone[data-screen=best] .ue-plan-steps li::before{content:none}
+.phone[data-screen=best] .ue-plan-steps li::after{left:15px;top:34px;height:calc(100% - 38px)}
+.phone[data-screen=best] .visual-step-icon{left:0;border:1px solid var(--line)}
+.rest-durations button{min-height:44px;padding-inline:4px;min-width:0}
+.rest-receipt .data-row{margin-top:16px}
+.shared-eeg{margin:24px 0}
+.shared-eeg .band-distribution{margin:12px 0}
+.shared-eeg .visual-status-row{margin:14px 0 0}
+.shared-eeg .list-button{min-height:48px}
+.contextual-rest{margin:14px 0}
+.contextual-rest h2{display:flex;align-items:center;gap:8px}
+.contextual-rest h2 svg{width:18px;height:18px;color:var(--accent)}
+.contextual-rest p{font-size:12px}
+.band-distribution .segmented{margin:14px 0}
+.butterfly-axis{font-size:11px;color:var(--muted);margin-bottom:6px}
+.butterfly-plot{display:block;width:100%;height:auto;border-radius:10px;background:var(--tint)}
+.butterfly-grid{stroke:var(--line);stroke-width:.65}
+.butterfly-zero{stroke:var(--muted);stroke-width:.8;stroke-dasharray:2 2}
+.butterfly-trace{stroke-width:1.15;vector-effect:non-scaling-stroke}
+.butterfly-labels{fill:var(--muted);stroke:none;font-size:10px}
+.butterfly-bands{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.butterfly-band{min-height:48px;display:flex;align-items:center;gap:5px;text-align:left;padding:6px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);font-size:11px}
+.butterfly-band small{display:block;color:var(--muted);font-size:10px}
+.butterfly-band strong{margin-left:auto;font-size:12px;font-variant-numeric:tabular-nums}
+.butterfly-band[aria-pressed=false]{background:transparent;color:var(--muted);border-style:dashed}
+.butterfly-band[aria-pressed=false] .band-key{background:transparent}
+.band-key{flex:none;width:7px;height:7px;border:1px solid var(--band-key);border-radius:50%;background:var(--band-key)}
+/* These rows use a single column, including in the scaled gallery preview. */
+.ue-entries,.ue-entry-group{grid-template-columns:minmax(0,1fr)}
+.ue-entries .ue-entry{grid-column:auto}

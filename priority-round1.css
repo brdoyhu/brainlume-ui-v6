@@ -1,0 +1,31 @@
+/* Shared controls occupy their own flex row below the scrolling content. */
+.session-action-bar{position:relative;z-index:3;flex-shrink:0;padding:11px 23px 24px;border-top:1px solid var(--line);background:var(--surface-solid)}
+.phone:has(>.session-action-bar)>.phone-main{padding-bottom:20px;scroll-padding-bottom:20px}
+.session-control-buttons{display:flex;gap:10px;align-items:stretch}
+.session-control-buttons>button{flex:1;min-width:0;min-height:50px;padding:12px 10px;font-size:13px;line-height:1.45;white-space:normal}
+.session-control-buttons>button svg{width:18px;height:18px;flex-shrink:0}
+.session-control-status{display:flex;align-items:center;gap:7px;margin:0 0 9px;font-size:12px;line-height:1.5;color:var(--muted)}
+.session-control-status svg{width:16px;height:16px;color:var(--accent)}
+.wear-action-bar .session-control-buttons>.secondary{flex:0 0 32%;font-size:12px}
+.session-safety-stop{display:flex;width:100%;min-height:44px;align-items:center;justify-content:center;gap:7px;padding:8px 4px;margin:4px 0 0;background:transparent;border:0;color:var(--warning);font-size:12px;line-height:1.5;border-radius:12px}
+.session-safety-stop svg{width:17px;height:17px}
+.session-safety-stop:hover{background:var(--warning-bg)}
+.session-safety-stop:focus-visible{outline-color:var(--warning)}
+.result-intro h1{margin:10px 0 8px;font-size:27px;line-height:1.3}
+.result-intro>.caption{margin:0 0 18px}
+.result-overview{display:flex;align-items:center;gap:20px;margin:0 0 20px;padding:0 0 17px;border-bottom:1px solid var(--line)}
+.result-rating{display:flex;flex-direction:column;gap:6px;flex:1}
+.result-rating>span{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
+.result-rating>span svg{width:18px;height:18px;color:var(--accent)}
+.result-rating>strong{font-size:48px;font-weight:450;line-height:1.15;font-variant-numeric:tabular-nums}
+.result-rating>strong small{font-size:19px;margin-left:6px;color:var(--muted)}
+.result-rating>small{font-size:12px;color:var(--muted)}
+.result-status-summary{display:flex;flex-direction:column;gap:10px;font-size:12px;color:var(--muted)}
+.result-status-summary>span{display:flex;align-items:center;gap:7px}
+.result-status-summary svg{width:16px;height:16px;color:var(--accent)}
+.phone[data-screen=result] .band-distribution{margin-top:0;margin-bottom:10px}
+.phone[data-screen=result] .band-distribution>details{margin:10px 0 0}
+.phone[data-screen=result] .band-distribution>details summary{font-size:12px;min-height:44px;padding:11px 0}
+.result-next-actions .actions{margin-top:18px;gap:10px}
+@media(max-width:700px){.session-action-bar{padding-bottom:calc(23px + env(safe-area-inset-bottom))}}
+@media(max-width:360px){.session-action-bar{padding-inline:19px}.session-control-buttons>button{font-size:12px;padding-inline:8px}.session-control-buttons{gap:8px}.result-overview{gap:12px}.result-rating>span,.result-status-summary{font-size:11px}.result-intro h1{font-size:25px}}
